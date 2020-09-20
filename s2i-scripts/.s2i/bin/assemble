@@ -6,6 +6,8 @@ source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
 
 echo "---> Enabling s2i support in httpd24 image"
 
+/usr/libexec/s2i/assemble
+
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
